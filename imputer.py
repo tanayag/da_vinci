@@ -1,6 +1,6 @@
 import sklearn.impute as Imputer
-from utils import *
 import numpy as np
+from utils import *
 
 class VinciImputer(object):
 
@@ -34,6 +34,11 @@ class VinciImputer(object):
                                         fill_value=self.missing_val)
         return imputer
 
+if __name__ == "__main__":
 
+    dataset_path = "./exmaple_datasets/iris.csv"
+    data = load_file(dataset_path)
+
+    imputer = VinciImputer()
 
 
