@@ -16,6 +16,12 @@ def load_file(file_name):
 
     return dataframe
 
+def make_folder(name):
+    try:
+        os.mkdir(name)
+    except:
+        pass
+
 def load_file_db():
 
     """loading data from database"""
