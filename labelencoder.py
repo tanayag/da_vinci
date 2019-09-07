@@ -15,4 +15,4 @@ def label_encode(df, object_id):
 if __name__ == "__main__":
     import pandas as pd
     df = pd.read_csv("/home/greatskull/00personal_projects/da_vinci/example_datasets/iris.csv")
-    df = label_encode(df)
+    df = label_encode(df, 1)
