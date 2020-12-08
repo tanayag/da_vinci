@@ -2,7 +2,7 @@ import sklearn.impute as Imputer
 import numpy as np
 from utils import *
 
-class VinciImputer(object):
+class LeafImputer(object):
 
     def __init__(self, missing_val=np.nan, constant=None):
         self.missing_val = missing_val
@@ -26,7 +26,7 @@ class VinciImputer(object):
     def constant_imputer(self):
 
         if self.missing_val is None:
-            raise Exception("Give 'constant' some value while initializing VinciImputer\
+            raise Exception("Give 'constant' some value while initializing LeafImputer\
                             when using constant_imputer")
 
         imputer = Imputer.SimpleImputer(missing_values=self.missing_val,
@@ -39,6 +39,6 @@ if __name__ == "__main__":
     dataset_path = "./exmaple_datasets/iris.csv"
     data = load_file(dataset_path)
 
-    imputer = VinciImputer()
+    imputer = LeafImputer()
 
 
