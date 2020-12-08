@@ -1,0 +1,7 @@
+[submodule "HPO"]
+	path = HPO
+	url = https://github.com/tanayag/HPO.git
+
+[submodule "algorithms"]
+	path = algorithms
+	url = https://github.com/tanayag/algorithms.git
